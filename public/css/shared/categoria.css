@@ -50,6 +50,7 @@ grid-gap:15px ;
     overflow: hidden;
 }
 .categoria__desc{
+    font-weight: 600;
     position: absolute;
     bottom: 15px;
     width: 100%;
@@ -61,7 +62,7 @@ grid-gap:15px ;
     padding: 1rem 0;
     border-bottom: 1px solid #5F5F5F;
     width: 100%;
-    height: 154px;
+    height: 280px;
     margin-bottom: 2rem;
 }
 .ubicanos__titulo{
@@ -84,6 +85,7 @@ grid-gap:15px ;
 }
 .categoria__img{
     width: 100%;
+    height: 100%;
   transform: scale(1);
     margin: 0 auto;
     display: block;
@@ -98,6 +100,92 @@ grid-gap:15px ;
 
 
 @media screen and (min-width:945px){
+
+    .overlay{
+        pointer-events: none;
+    opacity: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 4rem 2rem;
+        background-color: rgba(14, 13, 13,.9);
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+       transition: opacity .5s;
+    }
+  
+    
+    
+    .overlay__img{
+        /* position: absolute;
+        top:0;
+        right: 0;
+        width: 70%;
+        height: 70%;
+        display: block;
+        margin: 0 auto;
+        display: block;
+        flex: 1; */
+    
+        position: absolute;
+        top: 0;
+        right: 80px;
+        left: 80px;
+        width: 60%;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        display: block;
+        flex: 1;
+        
+    
+    }
+    .overlay__desc{
+        margin: 1rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .overlay__item{
+        color: white;
+        position: absolute;
+    }
+    
+    .x{top: 0px;
+        font-size: 20px;
+        text-decoration: none;
+        right:10px;
+    }
+    
+    .right{
+        top: 50%;
+        right: 0px;
+    }
+    .left{
+        top: 50%;
+        left:10px;
+    }
+    
+    
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .categoria__section{
        
     grid-template-columns: repeat(4,minmax(150px,1fr));
@@ -137,6 +225,10 @@ grid-gap:15px ;
 
 }
 
+
+
+
+
 @media screen and (min-width:1200px){
     .categoria__section{
        
@@ -146,13 +238,14 @@ grid-gap:15px ;
 
 
 
+
 .overlay{
     pointer-events: none;
 opacity: 0;
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     background-color: rgba(14, 13, 13,.9);
     top: 0;
     right: 0;
@@ -160,28 +253,30 @@ opacity: 0;
     align-items: center;
    transition: opacity .5s;
 }
-
 .overlay__imagen{
     position: relative;
     width: 100%;
     height: 100%;
+
 }
+
+
+.imagen1{opacity: 0;
+    display: block;
+    transition: opacity .3s linear;
+}
+
+
+
+    
 .overlay__img{
-    /* position: absolute;
-    top:0;
-    right: 0;
-    width: 70%;
-    height: 70%;
-    display: block;
-    margin: 0 auto;
-    display: block;
-    flex: 1; */
+ 
 
     position: absolute;
     top: 0;
     right: 80px;
-    left: 80px;
-    width: 60%;
+    left: 46px;
+    width: 76%;
     height: 100%;
     display: block;
     margin: 0 auto;
@@ -217,26 +312,12 @@ opacity: 0;
 }
 
 
-#imagen1{opacity: 0;
-    display: block;
-    transition: opacity .3s linear;
-}
-#imagen2{
-    opacity: 0;
-    display: block;
-    transition: opacity .3s linear;
-}
 
-#imagen3{
-    opacity: 0;
-    display: block;
-    transition: opacity .3s linear;
-}
+
+
+
 .aparece{
-  pointer-events: initial;
-    opacity: 1;
-    
-}
-/* .desaparece{
-    display: none;
-} */
+    pointer-events: initial;
+      opacity: 1;
+      
+  }
