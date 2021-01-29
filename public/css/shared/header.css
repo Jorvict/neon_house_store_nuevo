@@ -6,6 +6,18 @@
 a{
     text-decoration: none;
 }
+@font-face {
+    font-family: 'Proxima-Nova-Regular';
+    src: url('../../fuentes/Proxima_Nova_Regular.otf');
+}
+@font-face {
+    font-family: 'Proxima-Nova-SemiBold';
+    src: url('../../fuentes/Proxima_Nova_SemiBold.otf');
+}
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('../../fuentes/Proxima_Nova_Bold.otf');
+}
 
 /* Header */
 .header{
