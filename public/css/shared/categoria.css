@@ -47,6 +47,7 @@ grid-gap:15px ;
 .categoria__imagen{
     position: relative;
     cursor: pointer;
+    overflow: hidden;
 }
 .categoria__desc{
     position: absolute;
@@ -83,14 +84,14 @@ grid-gap:15px ;
 }
 .categoria__img{
     width: 100%;
-  
+  transform: scale(1);
     margin: 0 auto;
     display: block;
-    transition: width .5s;
+    transition:transform .6s;
 }
 
 .categoria__img:hover{
-    width: 90%;
+    transform: scale(1.2);
 
 }}
 

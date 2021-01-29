@@ -3,7 +3,7 @@ footer{
 }
 @media screen and (min-width:945px){
     footer{
-        margin: 4rem 0;
+        margin: 1rem 0;
     }
 }
 
@@ -18,7 +18,7 @@ footer{
 .sociales__item{
     color:  hsl(216deg, 85%, 34%);
 }
-.direccion{margin-bottom: 4rem;
+.direccion{margin-bottom: 2rem;
 font-size: 1.2rem;}
 
 .sociales{
