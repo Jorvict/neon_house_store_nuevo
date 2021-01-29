@@ -42,7 +42,14 @@ grid-gap:15px ;
 .categoria__img{
     
     width: 100%;
+    height: 100%;
 }
+
+
+
+
+
+
 
 .categoria__imagen{
     position: relative;
