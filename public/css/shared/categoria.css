@@ -119,15 +119,7 @@ grid-gap:15px ;
     
     
     .overlay__img{
-        /* position: absolute;
-        top:0;
-        right: 0;
-        width: 70%;
-        height: 70%;
-        display: block;
-        margin: 0 auto;
-        display: block;
-        flex: 1; */
+      
     
         position: absolute;
         top: 0;
