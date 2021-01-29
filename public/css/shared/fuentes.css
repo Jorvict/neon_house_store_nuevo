@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Proxima-Nova-Regular';
+    src: url('../../fuentes/ProximaNova-Regular.otf');
+}
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('../../fuentes/Proxima_Nova_Bold.otf');
+}
+@font-face {
+    font-family: 'Poppins-Thin';
+    src: url('../../fuentes/Poppins-Thin.ttf');
+}

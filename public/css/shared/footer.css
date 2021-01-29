@@ -1,0 +1,28 @@
+footer{
+    margin: 1.5rem 0;
+}
+@media screen and (min-width:945px){
+    footer{
+        margin: 4rem 0;
+    }
+}
+
+.direccion{
+    text-align: center;color: #5F5F5F;
+    
+}
+.direccion__item{
+    margin: .5rem 0;
+}
+
+.sociales__item{
+    color:  hsl(216deg, 85%, 34%);
+}
+.direccion{margin-bottom: 4rem;
+font-size: 1.2rem;}
+
+.sociales{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0;
+}
