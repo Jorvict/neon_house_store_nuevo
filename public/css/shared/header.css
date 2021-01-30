@@ -7,6 +7,10 @@ a{
     text-decoration: none;
 }
 @font-face {
+    font-family: 'Proxima-Nova-Light';
+    src: url('../../fuentes/Proxima_Nova_Light.otf');
+}
+@font-face {
     font-family: 'Proxima-Nova-Regular';
     src: url('../../fuentes/Proxima_Nova_Regular.otf');
 }
@@ -127,6 +131,7 @@ a{
         font-size: 16px;
         color: #494949;
         line-height: 30px;
+        text-align: justify;
     }
     
 /* Cotiza */
@@ -137,16 +142,120 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 50%;
-    background-color: rgba(68, 91, 125, 0.6);
-    padding-top: 55px;
+    background-color: rgba(68, 91, 125, 1);
+    padding-top: 70px;
     background-blend-mode: soft-light;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .quote .quote-title{
     width: 100%;
+    font-size: 26px;
     text-align: center;
     color: white;
     font-family: 'Proxima-Nova-SemiBold';
     text-transform: uppercase;
+}
+.quote .quote-link{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Proxima-Nova-Light';
+}
+
+/* Services */
+.services{
+    padding-bottom: 60px;
+}
+.services .services-title{
+    width: 80%;
+    height: auto;
+    padding: 48px 0;
+    margin: 0 auto;
+    margin-top: 72px;
+    text-align: center;
+    font-family: 'Proxima-Nova-SemiBold';
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #0e4b9c;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: none;
+    border-right: none;
+}
+.services .services-items-container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services .services-items-container .services-item{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.services .services-items-container .services-item .img-item-container{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.services .services-items-container .services-item .img-item-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.services .services-items-container .services-item h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Proxima-Nova-Bold';
+}
+
+@media screen and (max-width:768px){
+
+
+    /* About us */
+    .about-us .about-us-content .video-container{
+        width: 100%;
+        height: initial;
+    }
+    .about-us .about-us-content .description-container{
+        width: 100%;
+    }
+
+    /* Cotizacion */
+    .quote{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    /* Services */
+    .services .services-items-container{
+        padding: 0px;
+    }
+    .services .services-items-container .services-item{
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .services .services-items-container .services-item .img-item-container{
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+    .services .services-items-container .services-item h3{
+        width: 50%;
+    }
 }
