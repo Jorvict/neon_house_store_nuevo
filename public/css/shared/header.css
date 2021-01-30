@@ -240,7 +240,7 @@ a{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:425px){
 
     /* Services */
     .services .services-items-container{
