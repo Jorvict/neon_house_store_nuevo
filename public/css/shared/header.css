@@ -31,6 +31,7 @@ a{
     padding: 4px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Proxima-Nova-Regular';
 }
     .header .logo-container{
@@ -62,6 +63,15 @@ a{
     .header .menu ul li a i{
         margin-left: 5px;
         font-size: 12px;
+    }
+    .header .burger-button{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
     }
 
 /* Hero */
@@ -258,6 +268,16 @@ a{
 }
 
 @media screen and (max-width:768px){
+
+    /* Header */
+
+    .header .menu{
+        display: none;
+    }
+    .header .burger-button{
+        display: flex;
+    }
+
     /* Hero */
     .hero-container{
         height: 300px;
@@ -280,6 +300,11 @@ a{
 }
 
 @media screen and (max-width:425px){
+
+    /* Header */
+    .header{
+        padding: 4px 20px;
+    }
 
     /* Services */
     .services .services-items-container{
