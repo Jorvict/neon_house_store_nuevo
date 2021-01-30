@@ -1,7 +1,23 @@
 let imagen1 = document.getElementById("imagen_1")
+let imagen2 = document.getElementById("imagen_2")
+let imagen3 = document.getElementById("imagen_3")
+let imagen4 = document.getElementById("imagen_4")
+let imagen5 = document.getElementById("imagen_5")
+let imagen6 = document.getElementById("imagen_6")
+let imagen7 = document.getElementById("imagen_7")
+let imagen8 = document.getElementById("imagen_8")
+let imagen9 = document.getElementById("imagen_9")
+let imagen10 = document.getElementById("imagen_10")
+
+
 let overlay = document.getElementById("overlay")
 let x = document.getElementById("x")
 let i = 0
+
+
+
+
+
 
 
 
@@ -13,9 +29,96 @@ imagen1.addEventListener("click", (e) => {
     overlay.classList.add("aparece")
     document.getElementsByClassName("overlay__img")[0].style.opacity = "1"
 i =0
-console.log(i)
 
 
+})
+
+
+imagen2.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[1].style.opacity = "1"
+i =1
+
+
+
+
+
+})
+
+
+
+imagen3.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[2].style.opacity = "1"
+i =2
+
+
+})
+
+imagen4.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[3].style.opacity = "1"
+i =3
+
+
+})
+
+imagen5.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[4].style.opacity = "1"
+i =4
+
+
+})
+
+imagen6.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[5].style.opacity = "1"
+i =5
+
+
+})
+
+
+imagen7.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[6].style.opacity = "1"
+i =6
+
+
+})
+
+
+imagen8.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[7].style.opacity = "1"
+i =7
+
+
+})
+
+
+imagen9.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[8].style.opacity = "1"
+i =8
+
+
+})
+
+imagen10.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[9].style.opacity = "1"
+i =9
 
 
 })
@@ -30,8 +133,8 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         
-        document.getElementsByClassName("overlay__img")[2].style.opacity = "1"
-        i=2
+        document.getElementsByClassName("overlay__img")[9].style.opacity = "1"
+        i=9
 
     } else {
 
@@ -52,14 +155,14 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 document.getElementById("derecha").addEventListener("click", function (e) {
     e.preventDefault()
     // document.getElementsByClassName("overlay__img")[1].style.transition="opacity 2s linear";
-    if(i<2){
+    if(i<9){
     document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
     i++
     console.log(i)
     document.getElementsByClassName("overlay__img")[i].style.opacity = "1"}
 
     
-   else if (i == 2) {
+   else if (i == 9) {
         
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         i = 0
@@ -93,6 +196,6 @@ x.addEventListener("click", (e) => {
     e.preventDefault()
     overlay.classList.remove("aparece")
     document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
-    i = 0
+    
     console.log(i)
 })
