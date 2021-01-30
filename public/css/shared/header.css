@@ -68,17 +68,53 @@ a{
 .hero-container{
     width: 100%;
     height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    .hero-container figure{
+    .hero-container #slider{
+        overflow: hidden;
+        height: inherit;
         width: 100%;
-        height: 100%;
     }
-    .hero-container figure img{
-        width: 100%;
-        height: 100%;
+    .carousel_slide{
+        width: calc(100% * 3);
+        height: inherit;
+        margin: 0 0 0 -200%;
+        position: relative;
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 33s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+    }
+        /* Animación slider */
+        @-webkit-keyframes slide_animation{
+            0%{left: 200%;}
+            10%{left: 200%;}
+            20%{left: 100%;}
+            30%{left: 100%;}
+            40%{left: 0%;}
+            50%{left: 0%;}
+            60%{left: 100%;}
+            70%{left: 100%;}
+            80%{left: 100%;}
+            90%{left: 200%;}
+            100%{left: 200%;}
+        }
+    .hero-container .img-container{
+        width: calc(100% / 3);
+        height: inherit;
         object-fit: cover;
+        position: relative;
+        float: left;
     }
+    .hero-container .img-container img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
 
+    }
 
 /* About us*/
 .about-us{
@@ -222,7 +258,10 @@ a{
 }
 
 @media screen and (max-width:768px){
-
+    /* Hero */
+    .hero-container{
+        height: 300px;
+    }
 
     /* About us */
     .about-us .about-us-content .video-container{
