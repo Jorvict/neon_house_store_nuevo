@@ -68,11 +68,15 @@ a{
     .header .menu ul li a:hover{
         text-decoration: underline;
     }
-        .header .menu ul li a i{
+        .header .menu ul li i{
             margin-left: 5px;
             font-size: 12px;
         }
     /* Submenus */
+    .header .menu ul .hidden-desk,
+    .header .menu ul .hidden-desk{
+        display: none;
+    }
     .header .menu ul .parent-first,
     .header .menu ul .parent-second{
         position: relative;
@@ -80,7 +84,6 @@ a{
         .header .menu ul .parent-first .submenu,
         .header .menu ul .parent-second .submenu{
             display: none;
-            transition: .1s;
         }
         .header .menu ul .parent-first:hover .submenu,
         .header .menu ul .parent-second:hover .submenu{
@@ -330,13 +333,30 @@ a{
         .header .menu ul{
             display: initial;
         }
+        .header .menu ul .parent-first:hover  .submenu,
+        .header .menu ul .parent-second:hover .submenu{
+            display: none;
+        }
         .header .menu ul li{
             padding: 15px 10px;
             border-top: 1px solid #e3e3e3;
+            height: initial;
         }
         .header .menu ul li:last-child{
             border-bottom: 1px solid #e3e3e3;
         }
+        .header .menu ul li i{
+            right: 15px;
+            position: absolute;
+            top: 40%;
+        }
+
+        .header .menu ul .hidden-desk.is-active,
+        .header .menu ul .hidden-desk.is-active{
+            padding: 15px 30px;
+            display: block;
+        }
+
         .header .menu ul li a{
             font-size: 16px;
             color: #9d9d9d;
