@@ -128,7 +128,26 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+    /* Texto hero */
+    .hero-container .title-hero-container{
+        position: absolute;
+        z-index: 50;
+        left: 40px;
+        bottom: 80px;
+    }
+    .hero-container .title-hero-container p{
+        padding: 5px 10px;
+        color: white;
+        font-size: 52px;
+        text-transform: uppercase;
+        font-family: 'Proxima-Nova-SemiBold';
+        background-color: rgba(0, 0, 0, .5);
+        background-blend-mode: soft-light;
+    }
+
+    /* Sliders */
     .hero-container #slider{
         overflow: hidden;
         height: inherit;
@@ -239,8 +258,8 @@ a{
     background-size: cover;
     background-position: 0% 50%;
     background-color: rgba(68, 91, 125, 1);
-    padding-top: 70px;
     background-blend-mode: soft-light;
+    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -322,7 +341,6 @@ a{
     /* Header */
 
     .header .menu{
-        /* display: none; */
         position: fixed;
         z-index: 100;
         width: 100%;
@@ -378,6 +396,15 @@ a{
     .hero-container{
         height: 400px;
     }
+        /* Texto hero */
+        .hero-container .title-hero-container{
+            left: 20px;
+            bottom: 20px;
+        }
+        .hero-container .title-hero-container p{
+            padding: 5px 10px;
+            font-size: 42px;
+        }
 
     /* About us */
     .about-us .about-us-content .video-container{
@@ -386,6 +413,9 @@ a{
     }
     .about-us .about-us-content .description-container{
         width: 100%;
+        height: auto;
+        padding: 0px;
+        padding-top: 20px;
     }
 
     /* Cotizacion */
@@ -405,6 +435,21 @@ a{
     /* Hero */
     .hero-container{
         height: 270px;
+    }
+        /* Texto hero */
+        .hero-container .title-hero-container{
+            left: 10px;
+            bottom: 10px;
+            width: 80%;
+        }
+        .hero-container .title-hero-container p{
+            padding: 5px;
+            font-size: 32px;
+        }
+
+    /* About us */
+    .about-us .about-us-title{
+        font-size: 36px;
     }
 
     /* Services */
