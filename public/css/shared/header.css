@@ -65,6 +65,8 @@ a{
         font-size: 12px;
     }
     .header .burger-button{
+        position: relative;
+        z-index: 150;
         width: 40px;
         height: 40px;
         font-size: 20px;
@@ -272,15 +274,44 @@ a{
     /* Header */
 
     .header .menu{
-        display: none;
+        /* display: none; */
+        position: fixed;
+        z-index: 100;
+        width: 80%;
+        top: 0px;
+        transform: translateX(120%);
+        background: white;
+        padding: 0px 30px;
+        padding-top: 80px;
+        transition: 1s;
     }
-    .header .burger-button{
-        display: flex;
-    }
+        .header .menu ul{
+            display: initial;
+        }
+        .header .menu ul li{
+            padding: 15px 10px;
+            border-top: 1px solid #e3e3e3;
+        }
+        .header .menu ul li:last-child{
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .header .menu ul li a{
+            font-size: 16px;
+            color: #9d9d9d;
+        }
+        .header .menu ul li a:focus{
+            color: #393939;
+        }
+        .header .burger-button{
+            display: flex;
+        }
+        .header .menu.is-active{
+            transform: translateX(20%);
+        }
 
     /* Hero */
     .hero-container{
-        height: 300px;
+        height: 400px;
     }
 
     /* About us */
@@ -304,6 +335,11 @@ a{
     /* Header */
     .header{
         padding: 4px 20px;
+    }
+
+    /* Hero */
+    .hero-container{
+        height: 270px;
     }
 
     /* Services */
