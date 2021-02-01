@@ -18,8 +18,19 @@ footer{
 .sociales__item{
     color:  hsl(216deg, 85%, 34%);
 }
+
+
+
+
 .direccion{margin-bottom: 2rem;
-font-size: 1.2rem;}
+font-size:.8rem;}
+
+
+@media screen and (min-width:630px){
+    .direccion{
+        font-size:1.2rem;}
+
+}
 
 .sociales{
     font-size: 1.8rem;
