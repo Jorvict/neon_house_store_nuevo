@@ -52,19 +52,19 @@ figure {
     width: 100%;
     margin-bottom: .8rem;
 }
-.categoria1__img{
-transition: transform .6s;
-}
 
-.categoria1__img:hover {
-    transform: scale(1.2);
-
-}
 
 @media screen and (min-width:1024px) {
 
 
-
+    .categoria1__img{
+        transition: transform .6s;
+        }
+        
+        .categoria1__img:hover {
+            transform: scale(1.2);
+        
+        }
 
 
 
