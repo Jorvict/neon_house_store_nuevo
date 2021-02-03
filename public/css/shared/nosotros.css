@@ -14,19 +14,25 @@ figure {
     margin: 0;
     padding: 0;
 }
+.main__nosotros{
+    
+
+    margin-bottom: 2rem;
+}
+
 .nosotros__titulo{
     text-align: center;
     font-family: 'Proxima-Nova-SemiBold';
     color: hsl(216deg, 85%, 34%);
-    margin: 1rem 0;
+    margin: 2rem 0;
 
 }
 .nosotros__texto{
     text-align: justify;
     width: 95%;
     margin: 0 auto;
-    padding: 0 1.2rem;
-    padding-bottom: 1rem;
+    padding: 0 .7rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid;
 }
 
@@ -34,15 +40,15 @@ figure {
     font-size: 28px;
     font-family: 'Proxima-Nova-SemiBold';
     color: hsl(216deg, 85%, 34%);
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 .vision__texto{
     width: 95%;
     margin: 0 auto;
     text-align: justify;
-    padding: 0 1.2rem;
-    padding-bottom: 1rem;
+    padding: 0 .7rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid;
 }
 .vision__imagen{
@@ -63,15 +69,15 @@ figure {
     font-size: 28px;
     font-family: 'Proxima-Nova-SemiBold';
     color: hsl(216deg, 85%, 34%);
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 .mision__texto{
     width: 95%;
     margin: 0 auto;
     text-align: justify;
-    padding: 0 1.2rem;
-    padding-bottom: 1rem;
+    padding: 0 .7rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid;
 }
 .mision__imagen{
