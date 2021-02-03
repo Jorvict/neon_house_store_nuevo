@@ -195,7 +195,7 @@ figure {
 
 .nuestros__titulo{
 text-align: center;
-font-size: 2rem;
+
 margin-bottom: 1rem;
 font-weight: 400;
 }
@@ -211,6 +211,11 @@ background-color:#F5F5F5 ;
 
 
 @media screen and (min-width:630px) {
+
+    .nuestros__titulo{
+        text-align: center;
+        font-size: 2rem;}
+
     .categoria__section {
 
         grid-template-columns: repeat(3, minmax(150px, 1fr));
