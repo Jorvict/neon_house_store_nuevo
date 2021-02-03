@@ -28,7 +28,7 @@ a{
     background-color: white;
     width: 100%;
     height: 80px;
-    padding: 4px 40px;
+    padding: 4px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +51,7 @@ a{
         width: 100%;
         height: 100%;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         list-style: none;
@@ -60,7 +61,8 @@ a{
         display: flex;
         align-items: center;
     }
-    .header .menu ul li a{
+    .header .menu ul li a,
+    .header .menu ul li p{
         font-size: 14px;
         color: black;
         text-transform: uppercase;
@@ -85,6 +87,11 @@ a{
         .header .menu ul .parent-second .submenu{
             display: none;
         }
+        .header .menu ul .parent-first .submenu .submenu-element.first,
+        .header .menu ul .parent-second .submenu .submenu-element.second{
+            width: 100%;
+            height: 50%;
+        }
         .header .menu ul .parent-first:hover .submenu,
         .header .menu ul .parent-second:hover .submenu{
             display: flex;
@@ -92,7 +99,7 @@ a{
             top: 55px;
             left: 3px;
             width: 240px;
-            height: 60px;
+            height: 100px;
             background: white;
             border: #f2f2f2;
             box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
@@ -378,7 +385,8 @@ a{
             display: block;
         }
 
-        .header .menu ul li a{
+        .header .menu ul li a,
+        .header .menu ul li p{
             font-size: 16px;
             color: #9d9d9d;
         }
@@ -438,13 +446,13 @@ a{
     }
         /* Texto hero */
         .hero-container .title-hero-container{
+            width: calc(100% - 25px);
             left: 10px;
             bottom: 10px;
-            width: 80%;
         }
         .hero-container .title-hero-container p{
             padding: 5px;
-            font-size: 32px;
+            font-size: 26px;
         }
 
     /* About us */
@@ -468,4 +476,13 @@ a{
     .services .services-items-container .services-item h3{
         width: 50%;
     }
+}
+
+@media screen and (max-width:320px){
+    /* Hero */
+
+        /* Texto hero */
+        .hero-container .title-hero-container{
+            width: calc(100% - 20px);
+        }
 }
