@@ -186,8 +186,24 @@ figure {
 
 
 
+.nuestros__clientes{
+    background-color: #525770;
+    color: #F5F5F5;
+    padding: 3rem .5rem;
 
+}
 
+.nuestros__titulo{
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+font-weight: 400;
+}
+/* .nuestro__boton{
+    padding: .8rem;
+display: block;
+background-color:#F5F5F5 ;
+} */
 
 
 
@@ -200,6 +216,18 @@ figure {
         grid-template-columns: repeat(3, minmax(150px, 1fr));
 
     }
+
+    /* .nuestros__clientes{
+    
+        padding: 6rem .5rem;
+    
+    }
+    .nuestro__boton{
+width: 20%;
+margin-right: auto;
+margin-left: auto;
+
+    } */
 
     .categoria__img {
         width: 100%;
