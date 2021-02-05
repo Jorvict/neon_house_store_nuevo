@@ -110,3 +110,30 @@ input[type=number]::-webkit-outer-spin-button {
                 outline: none;
             }
 
+@media screen and (max-width:768px){
+    .work_us .work_us-desc-container,
+    .work_us .work_us-contact-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .hero_container .title-hero_container{
+        line-height: 60px;
+    }
+    .work_us .work_us-desc-container,
+    .work_us .work_us-contact-container{
+        width: 90%;
+    }
+    .work_us .work_us-contact-container .work_us-form-container .work_us-form .box-container.short{
+        width: 100%;
+    }
+    .work_us .work_us-contact-container .work_us-form-container .work_us-form label h2{
+        font-size: 16px;
+    }
+    .work_us .work_us-contact-container .work_us-form-container .work_us-form label input, 
+    .work_us .work_us-contact-container .work_us-form-container .work_us-form label select{
+        font-size: 14px;
+    }
+}
+
