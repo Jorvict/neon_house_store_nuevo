@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../public/css/shared/header.css">
+    <link rel="stylesheet" href="../public/css/contacto.css">
+    <link rel="stylesheet" href="../public/css/shared/footer.css">
+</head>
+<body>
+    <header class="header">
+        <figure class="logo-container">
+            <img src="../public/imagenes/Neon_House_Logo.png" alt="">
+        </figure>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="parent-first">
+                    <p>¿Quiénes somos?</p><i class="fas fa-chevron-down first"></i>
+                    <ul class="submenu first">
+                        <li class="submenu-element first">
+                            <a href="">Nosotros</a>
+                        </li>
+                        <li class="submenu-element first">
+                            <a href="">Trabaja con nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-desk first">
+                    <a href="">Nosotros</a>
+                </li>
+                <li class="hidden-desk second">
+                    <a href="">Trabaja con nosotros</a>
+                </li>
+                <li class="parent-second">
+                    <p>Servicios</p><i class="fas fa-chevron-down second"></i>
+                    <ul class="submenu second">
+                        <li class="submenu-element second">
+                            <a href="">Servicios</a>
+                        </li>
+                        <li class="submenu-element second">
+                            <a href="">Categorías</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-desk third">
+                    <a href="">Servicios</a>
+                </li>
+                <li class="hidden-desk fourth">
+                    <a href="">Categorías</a>
+                </li>
+                <li>
+                    <a href="">Proyectos</a>
+                </li>
+                <li>
+                    <a href="">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger-button">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero_container">
+    </section>
+    
+    <section class="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-contact-container">
+            <div class="contact-description">
+                <p>
+                    Envianos un correo y uno de nuestros colaboradores le respondera y resolvera sus dudas a la brevedad posible.
+                </p>
+            </div>
+            <div class="contact-form-container">
+                <!-- Formulario -->
+                <form class="contact-form" action="">
+                    <!-- Nombres -->
+                    <div class="box-container">
+                        <label for="full_name">
+                            <h2>Nombre</h2>
+                            <input type="text" name="full_name" id="full_name" required>
+                        </label>
+                    </div>
+                    <!-- Telefono -->
+                    <div class="box-container">
+                        <label for="telephone">
+                            <h2>Número de teléfono</h2>
+                            <input type="number" name="telephone" id="telephone" min="900000000" max="999999999" required>
+                        </label>
+                    </div>
+                    <!-- E-mail -->
+                    <div class="box-container">
+                        <label for="email">
+                            <h2>E-mail</h2>
+                            <input type="text" name="email" id="email" required>
+                        </label>
+                    </div>
+                    <!-- Mensaje -->
+                    <div class="box-container">
+                        <label for="career">
+                            <h2>Mensaje</h2>
+                            <textarea name="career" id="career" cols="30" rows="10" required></textarea>
+                        </label>
+                    </div>
+                    <!-- Button -->
+                    <div class="box-container">
+                        <button>Enviar</button>
+                    </div>
+
+                 
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="direccion">
+            <p class="direccion__item">Jr. Paruro 1401 tda. 130 sótano, CC Shopping Center, Cercado de Lima</p>
+            <p class="direccion__item">936910425 - 994078320 </p>
+            <p class="direccion__item">ventasneonhouse@gmail.com</p>
+            <p class="direccion__item">www.facebook.com/nhldecoracioncomercial</p>
+            <p class="direccion__item">@nhldecoracioncomercial </p>
+
+
+        </div>
+
+
+        <div class="sociales">
+            <a class="sociales__item" href="#"><i class="fab fa-instagram-square"></i></a>
+            <a class="sociales__item" href="#"> <i class="fab fa-facebook"></i></a>
+            <a class="sociales__item" href="#"> <i class="fab fa-youtube"></i></a>
+            <a class="sociales__item" href="#"><i class="fab fa-twitter-square"></i></a>
+            <a class="sociales__item" href="#"><i class="fab fa-invision"></i></a>
+
+
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../public/js/menu.js"></script>
+</body>
+</html>
