@@ -395,3 +395,37 @@ margin-left: auto;
     opacity: 1;
 
 }
+
+.clientes__section{
+    height: 90px;
+}
+img{
+    object-fit: initial!important;
+}
+
+
+.marca__2{
+    margin: 0 0 0 -100%;
+    -webkit-animation-duration:35s;
+}
+
+
+
+@-webkit-keyframes slide_animation{
+    0%{left: 100%;}
+  
+    50%{left: 0%;}
+    100%{left: 100%;}
+    
+ 
+}
+
+
+
+
+@media screen and (min-width:800px){
+    .clientes__section{
+        height: 150px;
+    }
+  
+}
