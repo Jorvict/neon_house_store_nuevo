@@ -1,5 +1,6 @@
 footer {
     margin: 1.5rem 0;
+    font-family: 'Proxima-Nova-Regular';
 }
 
 @media screen and (min-width:945px) {
