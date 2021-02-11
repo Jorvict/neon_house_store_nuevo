@@ -14,7 +14,7 @@ function ShowHideMenu(){
 menuButton.addEventListener('click', ShowHideMenu);
 
 // Desplegar submenu 1
-const displayfirstbutton = document.querySelector('.fas.first');
+const displayfirstbutton = document.querySelector('.parent-first');
 console.log(displayfirstbutton);
 const firstoption_firstmenu = document.querySelector('.hidden-desk.first');
 const secondoption_firstmenu = document.querySelector('.hidden-desk.second');
@@ -32,7 +32,7 @@ function ShowHideFirst(){
 displayfirstbutton.addEventListener('click', ShowHideFirst);
 
 // Desplegar submenu 2
-const displaysecondbutton = document.querySelector('.fas.second');
+const displaysecondbutton = document.querySelector('.parent-second');
 const firstoption_secondmenu = document.querySelector('.hidden-desk.third');
 const secondoption_secondmenu = document.querySelector('.hidden-desk.fourth');
 

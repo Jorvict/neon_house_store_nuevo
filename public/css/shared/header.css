@@ -35,7 +35,7 @@ a{
     font-family: 'Proxima-Nova-Regular';
 }
     .header .logo-container{
-        width: 90px;
+        width: 100px;
         height: 100%;
     }
     .header .logo-container img{
@@ -284,6 +284,7 @@ a{
     height: 50px;
     text-align: center;
     line-height: 50px;
+    color: black;
     background-color: white;
     font-size: 20px;
     text-transform: uppercase;
@@ -437,7 +438,7 @@ a{
 
     /* Header */
     .header{
-        padding: 4px 20px;
+        padding: 4px 10px;
     }
 
     /* Hero */
