@@ -8,7 +8,8 @@ let imagen7 = document.getElementById("imagen_7")
 let imagen8 = document.getElementById("imagen_8")
 let imagen9 = document.getElementById("imagen_9")
 let imagen10 = document.getElementById("imagen_10")
-
+let imagen11 = document.getElementById("imagen__11")
+let imagen12 = document.getElementById("imagen__12")
 
 let overlay = document.getElementById("overlay")
 let x = document.getElementById("x")
@@ -123,6 +124,25 @@ i =9
 
 })
 
+imagen11.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[10].style.opacity = "1"
+i =10
+
+
+})
+
+
+imagen12.addEventListener("click", (e) => {
+
+    overlay.classList.add("aparece")
+    document.getElementsByClassName("overlay__img")[11].style.opacity = "1"
+i =11
+
+
+})
+
 
 
 
@@ -155,14 +175,14 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 document.getElementById("derecha").addEventListener("click", function (e) {
     e.preventDefault()
     // document.getElementsByClassName("overlay__img")[1].style.transition="opacity 2s linear";
-    if(i<9){
+    if(i<11){
     document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
     i++
     console.log(i)
     document.getElementsByClassName("overlay__img")[i].style.opacity = "1"}
 
     
-   else if (i == 9) {
+   else if (i == 11) {
         
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         i = 0
