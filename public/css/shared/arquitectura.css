@@ -1,0 +1,14 @@
+.categoria1__desc{
+    
+    color: black;
+    position: static;
+    text-align: initial;
+}
+.categoria1__imagen{
+    overflow: initial;
+    margin-bottom: 7rem;
+}
+
+.categoria1__img:hover {
+    transform: scale(1);
+}
