@@ -1,0 +1,49 @@
+/* Proyectos destacados */
+.pry-dest-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pry-dest-container h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #0e4b9c;
+    font-family: 'Proxima-Nova-Light';
+    margin-bottom: 40px;
+}
+
+.pry-dest-container .pry-dest-video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pry-dest-container .pry-dest-video .video-container{
+    width: 30%;
+    height: 100%;
+}
+.pry-dest-container .pry-dest-video .video-container .flexible-video{
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+}
+.pry-dest-container .pry-dest-video .video-container .flexible-video .youtube-video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pry-nuevos-container h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #0e4b9c;
+    font-family: 'Proxima-Nova-Light';
+    margin-bottom: 40px;
+    text-align: center;
+}
