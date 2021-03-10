@@ -1,18 +1,13 @@
 
 <?php
 
-if (isset($_POST["enviar"])) {
-    $Nombres  = $_POST['full_name'];
-    $career  = $_POST['career'];
-    $gender  = $_POST['gender'];
-    $birthday  = $_POST['birthday'];
-    $Telefono= $_POST['telephone'];
+if ($_POST["option"]=="calatogrequest") {
+    $nomcategory= $_POST['nomcategory'];
+    $Nombres  = $_POST['empresa'];
     $Email   = $_POST['email'];
-    $distrito   = $_POST['district'];
-    $filetemp =$_FILES['cv']['tmp_name'];
-    $filename =$_FILES['cv']['name'];
+    $Telefono= $_POST['tel'];    
 
-    if ($Nombres=='' || $Email=='' || $Telefono=='' || !is_numeric($Telefono) || strlen($Telefono)<=8 || strlen($Telefono)>=10 || $career==''){ 
+    if ($Nombres=='' || $Email=='' || $Telefono=='' || !is_numeric($Telefono) || strlen($Telefono)<=8 || strlen($Telefono)>=10){ 
         echo "<script>
             alert('Todos los campos no han sido rellenados o datos erroneos.');location.href ='javascript:history.back()';</script>";
 
@@ -29,16 +24,12 @@ if (isset($_POST["enviar"])) {
         // Aqu¨ª van los datos que apareceran en el correo que reciba  
         $mail->WordWrap = 50; 
         $mail->IsHTML(true);      
-        $mail->Subject='Solicitud de Empleo '.$Nombres;
+        $mail->Subject='Solicita  Catalogo de ' .$nomcategory .' - '  .$Nombres;
         $mail->Body="Nombre: ". $Nombres . ".<br>
-                    Carrera: ". $career . ".<br>
-                    Genero: ". $gender . ".<br>
-                    Cumpleano: ". $birthday . ".<br>
-                    Telefono: ". $Telefono . ".<br>
                     Correo: ". $Email .".<br>
-                    Distrito: ". $distrito."<br><br>
+                    Telefono: ". $Telefono . ".<br><br>                   
                     <strong>Mensaje del Desarrollador</strong>: Click al boton ''Responder'' para escribir un mensaje a ". $Email.".";
-        $mail->addAttachment($filetemp, $filename);
+        //$mail->addAttachment($filetemp, $filename);
 
 
         // Datos del servidor SMTP
@@ -51,14 +42,14 @@ if (isset($_POST["enviar"])) {
         $mail->Username = 'postula@neonhouseled.com';  // en local, tu correo gmail // en servidor, nombre usuario
         $mail->Password = 'GfhHLmFNA#9O'; // en local, tu contrasena gmail //en servidor, contraseña de usuario
         
-        if ($mail->Send())
+        echo $mail->Send() ? 1: 0;
         //echo "<script>swal('Formulario enviado exitosamente', 'le responderemos lo mas pronto posible.','success');window.location.href='../index.php';</script>";
-        echo "<script>alert('Formulario enviado exitosamente, le responderemos lo mas pronto posible.');window.location.href='index.html';</script>";
-        else
-        echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
+        //echo "<script>alert('Formulario enviado exitosamente, le responderemos lo mas pronto posible.');window.location.href='index.html';</script>";
+        //else
+        //echo "<script>alert('Error al enviar el formulario');location.href ='javascript:history.back()';</script>";
 
     }
 }
 ?>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
