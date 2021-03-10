@@ -64,8 +64,8 @@
 .overlay__formulario {
     background-color: rgb(145, 183, 192);
     position: fixed;
-    top: 100px;
-    height: 60%;
+    top: 50px;
+    height: 80%;
     width: 100%;
     z-index: 10;
     opacity: 0;
@@ -117,7 +117,20 @@
     border: 1px solid hsl(216deg, 85%, 34%);
     background-color:hsl(216deg, 85%, 34%) ;
 }
-@media screen and (min-width:960px){
+.telefono{
+    margin-top: 3rem;
+}
+.t{
+    margin-left: 0;
+}
+@media screen and (min-width:1280px){
+.t{margin-left: 100px;}
+    .telefono{
+        margin-top: 3rem;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .overlay__imagen{
      
         width: 100%;
@@ -177,7 +190,7 @@
     background-color: rgb(145, 183, 192);
     position: fixed;
     top: 100px;
-    height: 60%;
+    height: 75%;
     width: 50%;
     left: 30%;
 }
