@@ -120,11 +120,14 @@
 <label class="overlay__label" for="empresa">Nombre o Empresa:
 </label>
 
-<input class="overlay__input e" type="text" id="empresa">
+<input class="overlay__input e" type="text" id="empresa" pattern="[a-zA-Z ]{2,254}" title="Solo debe contener letras. e.g. Company">
 </div>
 <div class="correo">
 <label for="email" class="overlay__label cor">Correo:</label>
-<input id="email" class="overlay__input c" type="email">
+<input id="email" class="overlay__input c" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="e.g. aso@gmail.com" required>
+<input type="hidden" id="nomcategory" value="Restaurante">
+
+
 </div>
 <input type="submit" class="overlay__submit" value="Obtener mi catálogo de 
 categoría restaurante
