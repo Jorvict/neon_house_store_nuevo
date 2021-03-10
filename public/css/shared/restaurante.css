@@ -131,6 +131,8 @@
 .subtitulo{
     font-size: 1.5rem;
     text-align: initial;
+    margin-left: 10px;
+    margin-top: 2rem;
 }
 .overlay__input{
     width: 70%;
@@ -151,6 +153,7 @@
     font-size: 18px;
 }
 .cotizar{
+    margin-top: 2rem;
     width: 20%;
     padding: 1rem;
     margin-bottom: 5rem;
