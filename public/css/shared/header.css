@@ -35,13 +35,13 @@ a{
     font-family: 'Proxima-Nova-Regular';
 }
     .header .logo-container{
-        width: 100px;
+        width: 220px;
         height: 100%;
     }
     .header .logo-container img{
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
     .header .menu{
         width: 600px;
