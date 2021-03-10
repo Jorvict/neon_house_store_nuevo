@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Proyectos destacados</title>
+
     <link rel="stylesheet" href="../public/css/shared/header.css">
-    <link rel="stylesheet" href="../public/css/contacto.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
+    <link rel="stylesheet" href="../public/css/proyectos.css">
+
 </head>
 <body>
+
     <header class="header">
         <figure class="logo-container">
             <img src="../public/imagenes/Neon_House_Logo.png" alt="">
@@ -65,62 +69,47 @@
         </div>
     </header>
 
-    <section class="hero_container">
-    </section>
-    
-    <section class="contact">
-        <h2 class="contact-title">Contacto</h2>
-        <div class="contact-contact-container">
-            <div class="contact-description">
-                <p>
-                    Si requieres mayor información o estás interesado sobre alguno de nuestros productos. Completa nuestro formulario y nos pondremos en contacto contigo a la brevedad posible.
-                </p>
+    <main>
+        <section class="pry-dest-container">
+            <h1>Proyectos destacados</h1>
+            <div class="pry-dest-video">
+                <figure class="video-container">
+                    <div class="flexible-video">
+                        <iframe class="youtube-video" src="https://www.youtube.com/embed/NnkbMaaskLY" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </figure>
             </div>
-            <div class="contact-form-container">
-                <!-- Formulario -->
-                <form class="contact-form" action="">
-                    <!-- Nombres -->
-                    <div class="box-container">
-                        <label for="full_name">
-                            <h2>Nombre</h2>
-                            <input type="text" name="full_name" id="full_name" required>
-                        </label>
-                    </div>
-                    <!-- Telefono -->
-                    <div class="box-container">
-                        <label for="telephone">
-                            <h2>Número de teléfono</h2>
-                            <input type="number" name="telephone" id="telephone" min="900000000" max="999999999" required>
-                        </label>
-                    </div>
-                    <!-- E-mail -->
-                    <div class="box-container">
-                        <label for="email">
-                            <h2>E-mail</h2>
-                            <input type="text" name="email" id="email" required>
-                        </label>
-                    </div>
-                    <!-- Mensaje -->
-                    <div class="box-container">
-                        <label for="career">
-                            <h2>Mensaje</h2>
-                            <textarea name="career" id="career" cols="30" rows="10" required></textarea>
-                        </label>
-                    </div>
-                    <!-- Button -->
-                    <div class="box-container" id="button-container">
-                        <button>Enviar</button>
-                    </div>
+            <p>Tendencia, vanguardia y novedades</p>
+        </section>
+        <section class="pry-nuevos-container">
+            <h1>Proyectos nuevos</h1>
+            <div class="pry-nuevos-desc">
+                <article class="pry">
+                    <figure class="img-container">
+                        <a href="www.google.com">
+                            <img src="../public/imagenes/SANGUCHERÍA.png" alt="">
+                        </a>
+                    </figure>
+                    <p>Decoración e iluminación <br>
+                    de interiores y exteriores</p>
+                </article>
 
-                 
-
-                </form>
+                <article class="pry">
+                    <figure class="img-container">
+                        <a href="www.google.com">
+                            <img src="../public/imagenes/SALON SPA y BARBERÍA.png" alt="">
+                        </a>
+                    </figure>
+                    <p>Decoración e iluminación <br>
+                    de interiores y exteriores</p>
+                </article>
+                
             </div>
-        </div>
+        </section>
 
-    </section>
-
-
+    </main>
 
     <footer>
 
@@ -145,10 +134,7 @@
 
 
         </div>
-
     </footer>
-
-    <script type="text/javascript" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../public/js/menu.js"></script>
+    
 </body>
 </html>
