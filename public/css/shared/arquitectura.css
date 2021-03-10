@@ -6,7 +6,16 @@
 }
 .categoria1__imagen{
     overflow: initial;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
+}
+main{margin-bottom: 1rem;}
+
+@media screen and (min-width:960px){
+    .categoria1__imagen{
+        overflow: initial;
+        margin-bottom: 7rem;
+    }
+    main{margin-bottom: 5rem;}
 }
 
 .categoria1__img:hover {
