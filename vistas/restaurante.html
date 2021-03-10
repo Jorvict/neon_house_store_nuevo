@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
-    <link rel="stylesheet" href="../public/css/shared/categoria.css">
-    <link rel="stylesheet" href="../public/css/shared/arquitectura.css">
+    
+    <link rel="stylesheet" href="../public/css/shared/restaurante.css">
+    
+
 </head>
 
 <body>
@@ -59,7 +61,7 @@
                     <a href="categoria.html">Categorías</a>
                 </li>
                 <li>
-                    <a href="proyectos.html">Proyectos</a>
+                    <a href="">Proyectos</a>
                 </li>
                 <li>
                     <a href="contacto.html">Contáctenos</a>
@@ -77,39 +79,74 @@
 
 
     <main class="main__categoria">
-        <h2 class="categoria1__titulo ">ARQUITECTURA COMERCIAL</h2>
-        <div class="categoria1__section">
+        <h2 class="categoria1__titulo ">RESTAURANTE</h2>
+      
+
+        <div class="overlay" id="overlay">
+            <figure class="overlay__imagen">
+               
+                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
+                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
+                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/restaurante/AnyConv.com__Uno Listo.webp" alt="">
+                <img class="overlay__img imagen1" src="../public/imagenes/restaurante/AnyConv.com__Dos Listo.webp" alt="">
+                <img class="overlay__img imagen1  " id="inicial" src="../public/imagenes/restaurante/AnyConv.com__Tres Listo.webp" alt="">
+                <img class="overlay__img imagen1" src="../public/imagenes/restaurante/AnyConv.com__Cuatro Listo.webp" alt="">
+                
+                
+    
+              
+    
+            </figure>
+    
+    
+    
+    
+        </div>
+    
+<br>
+
+
+        <h2 class="subtitulo">Revisa nuestros diseños exclusivos:</h2>
+        <a class="catalogo" id="catalogo" href="#">Ver catálogo completo</a>
+
+        <a class="cotizar" href="contacto.html">Cotizar</a>
 
 
 
+        <div id="form_1" class="overlay__formulario">
+            <a href="#" id="x_1" class="overlay__x x">X</a>
+<form class="overlay__form"  id="restaurante">
+    <div class="empresa">
+<label class="overlay__label" for="empresa">Nombre o Empresa:
+</label>
+
+<input class="overlay__input e" type="text" id="empresa" pattern="[a-zA-Z ]{2,254}" title="Solo debe contener letras. e.g. Company" required>
+</div>
+<div class="correo">
+<label for="email" class="overlay__label cor">Correo:</label>
+<input id="email" class="overlay__input c" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="e.g. aso@gmail.com" required>
+
+
+
+</div>
+<div class="telefono">
+<label for="tel" class="overlay__label te">Celular:</label>
+<input type="text" id="tel" class="overlay__input t" pattern="[0-9]{9}" title="debe conter numeros" required>
+</div>
+<input type="hidden" id="nomcategory" class="hiden" value="Restaurante">
+<input type="submit" class="overlay__submit" value="Obtener mi catálogo de categoría restaurante ">
+
+</form>
+
+
+
+
+
+
+
+        </div>
             
-
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_2" src="../public/imagenes/arquitectura/1.webp" alt=""></a>
-                <figcaption class="categoria1__desc"><strong>DIVERSIÓN ASEGURADA</strong> <p> Lo importante es la comodidad y el estilo para disfrutar de la noche.</p></figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_7" src="../public/imagenes/arquitectura/2.webp" alt=""></a>
-                <figcaption class="categoria1__desc"><strong>ARTE PARA TODOS</strong> <p>Lo ideal es salir de lo tradicional con una buena iluminación y una barra personalizada.</p></figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_4" src="../public/imagenes/arquitectura/3.webp" alt=""></a>
-                <figcaption class="categoria1__desc"><strong>ILUMINACIÓN PUNTUAL</strong> <p> El bar es el área principal y una iluminación led es la adecuada para hacerlo más
-                    llamativo.</p></figcaption>
-            </figure>
-
-
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_3" src="../public/imagenes/arquitectura/AnyConv.com__BARRA JUGUERIA..webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc"><strong>ESTILO MODERNO</strong> <p> Con una buena iluminación cálida se puede obtener un estilo moderno y elegante.</p></figcaption>
-            </figure>
+            
 
            
 
@@ -245,7 +282,11 @@
 
     </footer>
     <script type="text/javascript" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="../public/js/menu.js"></script>
+    <script type="text/javascript" src="../public/js/restaurante.js"></script>
+    <script type="text/javascript" src="../public/js/catalogrequest.js"></script>
 
 
 </body>
