@@ -78,26 +78,26 @@
             </div>
             <div class="contact-form-container">
                 <!-- Formulario -->
-                <form class="contact-form" action="">
+                <form class="contact-form" action="../controladores/enviarcorreo.php" method="POST">
                     <!-- Nombres -->
                     <div class="box-container">
                         <label for="full_name">
                             <h2>Nombre</h2>
-                            <input type="text" name="full_name" id="full_name" required>
+                            <input type="text" name="full_name" id="full_name" pattern="[a-zA-Z ]{2,254}" title="Solo debe contener letras. e.g. john" required>
                         </label>
                     </div>
                     <!-- Telefono -->
                     <div class="box-container">
                         <label for="telephone">
                             <h2>Número de teléfono</h2>
-                            <input type="number" name="telephone" id="telephone" min="900000000" max="999999999" required>
+                            <input type="text" name="telephone" id="telephone" pattern="[0-9]{9,12}" title="debe conter numeros" required>
                         </label>
                     </div>
                     <!-- E-mail -->
                     <div class="box-container">
                         <label for="email">
                             <h2>E-mail</h2>
-                            <input type="text" name="email" id="email" required>
+                            <input type="text" name="email" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" title="e.g. aso@gmail.com" required>
                         </label>
                     </div>
                     <!-- Mensaje -->
@@ -109,10 +109,9 @@
                     </div>
                     <!-- Button -->
                     <div class="box-container" id="button-container">
-                        <button>Enviar</button>
-                    </div>
-
-                 
+                        <!--<button>Enviar</button>-->
+                        <button class="form__section boton"  id="enviar" name="enviar" >Enviar</button>
+                    </div>                 
 
                 </form>
             </div>
@@ -150,5 +149,6 @@
 
     <script type="text/javascript" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/menu.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
