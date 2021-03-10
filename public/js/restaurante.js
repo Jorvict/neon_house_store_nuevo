@@ -92,10 +92,3 @@ document.getElementById("derecha").addEventListener("click", function (e) {
 
 
 
-x.addEventListener("click", (e) => {
-    e.preventDefault()
-    overlay.classList.remove("aparece")
-    document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
-    
-    console.log(i)
-})
