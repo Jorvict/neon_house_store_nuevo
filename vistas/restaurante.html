@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon House Led-Categorías</title>
+    <title>Neon House Led-Servicios</title>
 
     <link rel="stylesheet" href="../public/css/shared/header.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">
-    <link rel="stylesheet" href="../public/css/shared/categoria.css">
+    
+    <link rel="stylesheet" href="../public/css/shared/restaurante.css">
+    
+
 </head>
 
 <body>
@@ -73,95 +76,71 @@
 
 
 
+
+
     <main class="main__categoria">
-        <h2 class="categoria1__titulo ">CATEGORÍAS</h2>
-        <div class="categoria1__section">
+        <h2 class="categoria1__titulo ">RESTAURANTE</h2>
+      
 
-
-
-            <figure class="categoria1__imagen derecha">
-                <a href="restaurante.html">
-                <img class="categoria1__img" id="imagen_5" src="../public/imagenes/categoria/RESTAURANTE sin nombre.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">RESTAURANTE</figcaption>
+        <div class="overlay" id="overlay">
+            <figure class="overlay__imagen">
+               
+                <a href="#" id="derecha" class="overlay__item right"><i class="far fa-circle"></i></a>
+                <a href="#" id="isquierda" class="overlay__item left"><i class="far fa-circle"></i></i></a>
+                <img class="overlay__img imagen1 a " id="inicial" src="../public/imagenes/slider/2.jpg" alt="">
+                <img class="overlay__img imagen1 " " src="../public/imagenes/slider/q.jpg" alt="">
+                
+                
+    
+              
+    
             </figure>
+    
+    
+    
+    
+        </div>
+    
+<br>
 
 
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_1" src="../public/imagenes/categoria/CEVICHERIA sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">CEVICHERÍA</figcaption>
-            </figure>
+        <h2 class="subtitulo">Revisa nuestros diseños exclusivos:</h2>
+        <a class="catalogo" id="catalogo" href="#">Ver catálogo completo</a>
 
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_2" src="../public/imagenes/categoria/SANGUCHERÍA sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">SANGUCHERÍA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_7" src="../public/imagenes/categoria/FAST FOOD sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">FAST FOOD</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_4" src="../public/imagenes/categoria/POLLERÍA sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">POLLERÍA</figcaption>
-            </figure>
+        <a class="cotizar" href="contacto.html">Cotizar</a>
 
 
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_3" src="../public/imagenes/categoria/DISCOTECA sin nombre.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">DISCOTECA</figcaption>
-            </figure>
 
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_10" src="../public/imagenes/categoria/PIZZERIA sin nombre.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">PIZZERIA</figcaption>
-            </figure>
+        <div id="form_1" class="overlay__formulario">
+            <a href="#" id="x_1" class="overlay__x x">X</a>
+<form class="overlay__form" action="#">
+    <div class="empresa">
+<label class="overlay__label" for="empresa">Nombre o Empresa:
+</label>
+
+<input class="overlay__input e" type="text" id="empresa">
+</div>
+<div class="correo">
+<label for="email" class="overlay__label cor">Correo:</label>
+<input id="email" class="overlay__input c" type="email">
+</div>
+<input type="submit" class="overlay__submit" value="Obtener mi catálogo de 
+categoría restaurante
+">
+
+</form>
 
 
 
 
 
-            <figure class="categoria1__imagen">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_6" src="../public/imagenes/categoria/CAFETERIA Y JUGUERIA sin nombre.webp" alt="">
-            </a>
-                <figcaption class="categoria1__desc">CAFETERÍA Y JUGERIA</figcaption>
-            </figure>
 
 
+        </div>
+            
+            
 
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_9" src="../public/imagenes/categoria/PANADERÍA sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">PANADERÍA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen">
-                <a href="index.html">
-                <img class="categoria1__img" id="imagen_8" src="../public/imagenes/categoria/SALON Y SPA sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">SALON SPA Y BARBERIA</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen derecha">
-                <a href="#">
-                <img class="categoria1__img" id="imagen_9" src="../public/imagenes/categoria/BAR sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">BAR</figcaption>
-            </figure>
-
-            <figure class="categoria1__imagen">
-                <a href="index.html">
-                <img class="categoria1__img" id="imagen_8" src="../public/imagenes/categoria/HOGAR sin nombre.webp" alt=""></a>
-                <figcaption class="categoria1__desc">HOGAR</figcaption>
-            </figure>
+           
 
 
 
@@ -296,6 +275,7 @@
     </footer>
     <script type="text/javascript" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../public/js/menu.js"></script>
+    <script type="text/javascript" src="../public/js/restaurante.js"></script>
 
 
 </body>

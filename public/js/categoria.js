@@ -153,8 +153,8 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         
-        document.getElementsByClassName("overlay__img")[9].style.opacity = "1"
-        i=9
+        document.getElementsByClassName("overlay__img")[11].style.opacity = "1"
+        i=11
 
     } else {
 
