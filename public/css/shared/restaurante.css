@@ -107,9 +107,10 @@
     margin-top: 1.5rem;
 }
 .overlay__submit{
+    text-align: center;
     display: block;
     color: white;
-    width: 80%;
+    width: 83%;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -117,6 +118,7 @@
     border: 1px solid hsl(216deg, 85%, 34%);
     background-color:hsl(216deg, 85%, 34%) ;
 }
+.extra{width: 94%;}
 .telefono{
     margin-top: 1.5rem;    width: 85%;
     margin-left: auto;
@@ -177,7 +179,7 @@
 }
 
 .overlay__submit{
-    width: 50%;
+    width: 60%;
 }
 
 .e{
