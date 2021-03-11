@@ -352,6 +352,11 @@ a{
 
     /* Header */
 
+    .header{
+        position: fixed;
+        z-index: 200;
+    }
+
     .header .menu{
         position: fixed;
         z-index: 100;
@@ -408,6 +413,7 @@ a{
     /* Hero */
     .hero-container{
         height: 400px;
+        padding-top: 80px;
     }
         /* Texto hero */
         .hero-container .title-hero-container{
