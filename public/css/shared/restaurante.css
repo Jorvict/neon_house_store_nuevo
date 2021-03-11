@@ -118,13 +118,15 @@
     background-color:hsl(216deg, 85%, 34%) ;
 }
 .telefono{
-    margin-top: 3rem;
+    margin-top: 1.5rem;    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .t{
     margin-left: 0;
 }
 @media screen and (min-width:1280px){
-.t{margin-left: 100px;}
+.t{margin-left: 98px;}
     .telefono{
         margin-top: 3rem;
         width: 85%;

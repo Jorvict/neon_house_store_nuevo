@@ -33,8 +33,8 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         
-        document.getElementsByClassName("overlay__img")[3].style.opacity = "1"
-        i=3
+        document.getElementsByClassName("overlay__img")[1].style.opacity = "1"
+        i=1
 
     } else {
 
@@ -55,14 +55,14 @@ document.getElementById("isquierda").addEventListener("click", function (e) {
 document.getElementById("derecha").addEventListener("click", function (e) {
     e.preventDefault()
     // document.getElementsByClassName("overlay__img")[1].style.transition="opacity 2s linear";
-    if(i<3){
+    if(i<1){
     document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
     i++
     console.log(i)
     document.getElementsByClassName("overlay__img")[i].style.opacity = "1"}
 
     
-   else if (i == 3) {
+   else if (i == 1) {
         
         document.getElementsByClassName("overlay__img")[i].style.opacity = "0"
         i = 0
