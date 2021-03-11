@@ -1,11 +1,36 @@
 footer {
     margin: 1.5rem 0;
     font-family: 'Proxima-Nova-Regular';
+    position: relative;
 }
-
+.ultimo{
+    width: 80%;
+    margin: auto;
+}
+.boton_final{
+    display: block;
+    width: 48%;
+    margin: auto;
+    border: 2px solid rgb(200, 200, 200);
+    /* border-radius: 11%; */
+    overflow: hidden;
+}
+.imagen_final{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 @media screen and (min-width:945px) {
+    
     footer {
         margin: 1rem 0;
+       
+    }
+    .ultimo{
+        width: 30%;
+        position: absolute;
+      right: 10px;
+      top: 40%;
     }
 }
 
@@ -27,7 +52,7 @@ footer {
 
 
 .direccion {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: .8rem;
 }
 
@@ -35,6 +60,12 @@ footer {
 @media screen and (min-width:630px) {
     .direccion {
         font-size: 1.2rem;
+    }
+    .ultimo{
+        width: 30%;
+        position: absolute;
+      right: 0;
+      top: 40%;
     }
 
 }
