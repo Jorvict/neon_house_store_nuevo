@@ -11,7 +11,7 @@ footer {
     border-radius: 50%;
 }
 .ultimo:hover{
-    background-color:rgb(21, 89, 190);
+    background-color:rgba(21, 89, 190,.5);
 }
 .boton_final{
     display: block;
