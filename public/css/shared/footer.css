@@ -4,14 +4,20 @@ footer {
     position: relative;
 }
 .ultimo{
-    width: 80%;
+    width: 38%;
     margin: auto;
+    /* background-color: hsl(216deg, 85%, 34%); */
+    transition: background-color .5s;
+    border-radius: 50%;
+}
+.ultimo:hover{
+    background-color:rgba(21, 89, 190,.5);
 }
 .boton_final{
     display: block;
-    width: 48%;
+    width: 100%;
     margin: auto;
-    border: 2px solid rgb(200, 200, 200);
+    /* border: 2px solid rgb(200, 200, 200); */
     /* border-radius: 11%; */
     overflow: hidden;
 }
@@ -27,8 +33,8 @@ footer {
        
     }
     .ultimo{
-        width: 30%;
-        position: absolute;
+        width: 15%;
+        /* position: absolute; */
       right: 10px;
       top: 55%;
     }
@@ -62,8 +68,8 @@ footer {
         font-size: 1.2rem;
     }
     .ultimo{
-        width: 30%;
-        position: absolute;
+        width: 20%;
+        /* position: absolute; */
       right: 0;
       top: 55%;
     }
